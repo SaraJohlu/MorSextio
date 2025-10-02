@@ -4,9 +4,13 @@ html body {
   box-sizing: border-box;
 
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
 
-  background: radial-gradient(ellipse at bottom, rgb(25, 25, 25) 0%, black 100% );
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(25, 25, 25) 0%,
+    black 100%
+  );
   overflow: hidden;
   background-repeat: no-repeat;
 
@@ -15,6 +19,7 @@ html body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 0;
 }
 
 #root {
@@ -25,118 +30,176 @@ html body {
 
   width: 100%;
   height: 100vh;
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow-y: none;
+  overflow-x: none;
+  z-index: 1;
 }
 
-#star1 #star2 #star3{
-    position: absolute;
-    background: transparent;
-    border-radius: 50%;
+.homePage {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: none;
+  overflow-x: none;
+  z-index: 1;
+}
+
+#star1 #star2 #star3 {
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 0;
 }
 
 @keyframes starAnimation {
-    from {
-        tramsform: translateY(0);
-    }
-    to {
-        transform: translateY(-2000px)
-    }
+  from {
+    tramsform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
 }
 
 main {
   position: absolute;
   width: 100%;
   height: 100vh;
+  z-index: 0;
+}
+
+.startsky {
+z-index: 0;
 }
 
 main .happyBButton {
   background-color: rgba(255, 247, 0, 0.132);
-  border: 1px solid gold ;
+  border: 2px solid gold;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
   margin-top: 30px;
   padding: 0;
-  width: 30vw;
+  width: 40vw;
   height: 5vh;
   border-radius: 5px;
   border: none;
   box-shadow: 0px 0px 10px 2px rgba(255, 237, 134, 0.803);
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   text-align: center;
 }
 
- h1 {
+h1 {
   font-family: "Leckerli One", cursive;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 100;
   margin-top: 100px;
   margin-bottom: 0;
+  z-index: 1;
 
   background: -webkit-linear-gradient(white, rgb(145, 123, 0));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   @keyframes lights {
     0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+      color: hsl(230, 100%, 95%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
   }
-  
-  30% { 
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  40% { 
-    color: hsl(230, 100%, 95%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-   }
-  
-  
 }
 
 h2 {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: rgb(145, 123, 0);
+  color: rgb(195, 166, 2);
+  font-size: xx-large;
+  z-index: 1;
 }
 
 .picture {
-  width: 400px;
+  width: 360px;
   height: auto;
-  margin-top: 20px;
+  position: sticky;
+  margin-top: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(199, 186, 9, 0.46)
+  );
+  border-radius: 5px;
+}
+.herPage{
+  z-index: 1;
+}
+.PictureBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  transition: step-start;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.388);
+
+  width: auto;
+  height: auto;
+}
+
+.pic {
+  width: 100px;
+  height: 100px;
+  border: 2px solid gold;
+  z-index: 1;
 }

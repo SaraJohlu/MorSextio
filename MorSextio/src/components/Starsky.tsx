@@ -1,4 +1,4 @@
-import "../App.css";
+import "./../App.css";
 
 function starskyBoxShadow(count: number, color: string) {
   const star: string[] = [];

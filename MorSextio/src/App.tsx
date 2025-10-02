@@ -1,20 +1,14 @@
 import "./App.css";
-import { Stars } from "./components/Starsky";
-import ChampagneNglas from "./assets/champange popping.png"
+import { Routes, Route } from "react-router-dom";
+import HerPage from "./components/HerPage";
+import Home from "./components/Home";
 
 function App() {
-
   return (
-    <>
-      <main>
-        <Stars />
-        <h1>Helena</h1>
-        <h2>60 ÅR</h2>
-        <button className="happyBButton">Klicka på mig</button>
-
-        <img src={ChampagneNglas} alt="Bild på en champange flaska" className="picture" />
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/her-page" element={<HerPage />} />
+    </Routes>
   );
 }
 
