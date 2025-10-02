@@ -5,7 +5,7 @@ function starskyBoxShadow(count: number, color: string) {
   for (let i = 0; i < count; i++) {
     const x = Math.floor(Math.random() * 2000);
     const y = Math.floor(Math.random() * 2000);
-    star.push(`${x}px ${y}px gold`);
+    star.push(`${x}px ${y}px ${color}`);
   }
   return star.join(", ");
 }
