@@ -1,4 +1,5 @@
 import { Stars } from "./Starsky";
+import "./../App.css"
 import one from "./../assets/1.png";
 import two from "./../assets/2.png";
 import three from "./../assets/3.png";
@@ -11,40 +12,26 @@ export default function HerPage() {
       <Stars />
 
       <div className="scroller">
-        <ul className="PictureBox">
-          <li className="picBoxList">
-            <img src={five} alt="Borås Logga" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={one} alt="Hotell" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={two} alt="Nappy Time" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={three} alt="FOOD" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={four} alt="Hemsökta museet" className="picInBox" />
-          </li>
-
-          <li className="picBox">
-            <img src={five} alt="Borås Logga" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={one} alt="Hotell" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={two} alt="Nappy Time" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={three} alt="FOOD" className="picInBox" />
-          </li>
-          <li className="picBox">
-            <img src={four} alt="Hemsökta museet" className="picInBox" />
-          </li>
-        </ul>
+        <img src={five} alt="Borås Logga" className="picInBox" />
+        <img src={one} alt="Hotell" className="picInBox" />
+        <img src={two} alt="Nappy Time" className="picInBox" />
+        <img src={three} alt="FOOD" className="picInBox" />
+        <img src={four} alt="Hemsökta museet" className="picInBox" />
+        <img src={five} alt="Borås Logga" className="picInBox" />
+        <img src={one} alt="Hotell" className="picInBox" />
+        <img src={two} alt="Nappy Time" className="picInBox" />
+        <img src={three} alt="FOOD" className="picInBox" />
+        <img src={four} alt="Hemsökta museet" className="picInBox" />
+        <img src={five} alt="Borås Logga" className="picInBox" />
+        <img src={one} alt="Hotell" className="picInBox" />
+        <img src={two} alt="Nappy Time" className="picInBox" />
+        <img src={three} alt="FOOD" className="picInBox" />
+        <img src={four} alt="Hemsökta museet" className="picInBox" />
       </div>
+
+      <section>
+        <h1 className="herPageh1">Grattis vår älskade underbara Helena</h1>
+      </section>
     </main>
   );
 }
