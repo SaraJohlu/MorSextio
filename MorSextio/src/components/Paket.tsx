@@ -42,7 +42,7 @@ export default function Kuvert() {
                   oss med för din trivsel. Jag kommer att stå för mig själv.
                 </p>
                 <p>
-                    Vi älskar dig! Kära du &#10084;&#65039;!
+                    Vi älskar dig! &#10084;&#65039;
                 </p>
                 <strong>Önskar</strong>
                 <p>Sara och Simon med familj, Jimmi och Jennifer med familj, Mor och Far, Linda med familj och Tommy</p>
