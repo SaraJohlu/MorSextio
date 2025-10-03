@@ -1,18 +1,27 @@
+.herpageP {
+    margin-top: 100px;
+    padding: 0;
+    color: #f1c40fee;
+  font-family:"Roboto", sans-serif;
+}
+
 .kuvert-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 5px;
   cursor: pointer;
+  border-radius: 10px;
   
 }
 
 /* Yttersta kuvertet */
 .kuvert {
   position: relative;
-  width: 240px;
-  height: 160px;
+  width: 250px;
+  height: 170px;
   perspective: 800px;
+  border-radius: 10px;
 }
 
 /* Ficka (rektangel) */
@@ -35,9 +44,9 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 120px solid transparent;
-  border-right: 120px solid transparent;
-  border-top: 90px solid #aea411;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-top: 95px solid #aea411;
   transform-origin: top center;
   transition: transform 0.6s ease-in-out;
   z-index: 2;
@@ -48,7 +57,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 200px;
+  width: 220px;
   background: #fff;
   border-radius: 6px;
   padding: 12px;
@@ -74,4 +83,13 @@
 .bh1 {
     font-size: larger;
     margin: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.brevet p {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: large;
 }

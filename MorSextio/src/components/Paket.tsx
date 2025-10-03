@@ -6,12 +6,13 @@ export default function Kuvert() {
 
   return (
     <>
+    <p className="herpageP">Öppna mig!</p>
       <section onClick={() => setOpen(!open)} className="kuvert-box">
         <div className={`kuvert ${open ? "open" : ""}`}>
           <div className="kuvert-ficka">
             <div className="kuvert-flärp">
               <div className="brevet">
-                <h1 className="bh1">Grattis Helena!</h1>
+                <h1 className="bh1">Kära du &#10084;&#65039;!</h1>
                 <p>
                   Det är svårt att komma på något att ge dig när man helst vill
                   ge dig allt det fina och goda i livet! Men vi hoppas att du
@@ -40,6 +41,12 @@ export default function Kuvert() {
                   oss varit med och bidragit till och denna kan vi alltså röra
                   oss med för din trivsel. Jag kommer att stå för mig själv.
                 </p>
+                <p>
+                    Vi älskar dig!
+                </p>
+                <strong>Önskar</strong>
+                <p>Sara och Simon med familj, Jimmi och Jennifer med familj, Mor och Far, Linda med familj och Tommy</p>
+                <p>Penga pungen kan du fråga om ifall du vill</p>
               </div>
             </div>
           </div>

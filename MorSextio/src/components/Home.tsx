@@ -6,7 +6,7 @@ export default function Home() {
     return(
         <main className="homePage">
             <Stars />
-            <h1>Helena</h1>
+            <h1 className="homepageh1">Helena</h1>
             <h2>60 ÅR</h2>
             <Link to={"/her-page"}><button className="happyBButton">Klicka på mig</button></Link>
 
