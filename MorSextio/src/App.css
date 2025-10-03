@@ -87,14 +87,15 @@ z-index: 0;
 
 main .happyBButton {
   background-color: rgba(255, 247, 0, 0.132);
-  border: 2px solid gold;
+  border: 1px solid gold;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: medium;
+  font-weight: 600;
   margin-top: 30px;
   padding: 0;
   width: 40vw;
-  height: 5vh;
+  height: 8vh;
   border-radius: 5px;
   border: none;
   box-shadow: 0px 0px 10px 2px rgba(255, 237, 134, 0.803);
@@ -105,7 +106,7 @@ main .happyBButton {
 
 h1 {
   font-family: "Leckerli One", cursive;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 100;
   margin-top: 100px;
   margin-bottom: 0;
@@ -171,6 +172,7 @@ h2 {
   width: 360px;
   height: auto;
   position: sticky;
+  bottom: 1px;
   margin-top: 50px;
   background-image: linear-gradient(
     to bottom,
@@ -178,28 +180,7 @@ h2 {
     rgba(199, 186, 9, 0.46)
   );
   border-radius: 5px;
-}
-.herPage{
-  z-index: 1;
-}
-.PictureBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  transition: step-start;
-  z-index: 1;
-
-  background-color: rgba(0, 0, 0, 0.388);
-
-  width: auto;
-  height: auto;
+  z-index: -1;
 }
 
-.pic {
-  width: 100px;
-  height: 100px;
-  border: 2px solid gold;
-  z-index: 1;
-}
+
