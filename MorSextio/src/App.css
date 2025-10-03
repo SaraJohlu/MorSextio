@@ -189,14 +189,22 @@ h2 {
   height: 100vh;
 }
 .scroller {
-  width: max-content;
-  
+  width: 100%;
   display: flex;
   overflow:hidden;
   margin-top: 50px;
-  animation: scroll 40s linear infinite;
   z-index: 1;
-  box-shadow: inset 1px 1px 10px 1px black;
+  
+  
+}
+.scrollerBox {
+  width: max-content;
+  display: flex;
+  background-image:linear-gradient(to bottom, rgba(255, 217, 0, 0.344), rgba(102, 89, 17, 0.273), black);
+  
+  animation: scroll 30s linear infinite;
+  z-index: 1;
+  
 }
 
 .picInBox {
@@ -205,11 +213,7 @@ h2 {
   border-radius: 5px;
   display: block;
   margin: 10px 20px 10px 0;
-  flex: 0 0 auto;
-
-  object-fit: cover;
-  box-shadow: 1px 1px 50px 3px rgba(249, 238, 25, 0.204);
-  
+  flex: 0 0 auto; 
 }
 
 @keyframes scroll {
@@ -220,10 +224,70 @@ h2 {
     transform: translateX(-50%);
   }
 }
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
 .herPageh1 {
   font-size: x-large;
   width: 80%;
   text-align: center;
   margin-top: 10px;
+  position: relative;
+}
+
+.kuvert {
+  position: relative;
+  width: 260px;
+  height: 180px;
+  perspective: 1000px;
+  background-color: #d4af37;
+}
+
+/* Basen */
+.kuvert-ficka {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1c40f; /* gul */
+  border: 2px solid #d4af37;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+
+/* Flärp */
+.kuvert-flärp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-top: 100px solid #f1c40f;
+  border-top-color: #f1c40f; 
+  border-radius: 2px;
+  transform-origin: top center;
+  transition: transform 0.6s ease-in-out;
+  z-index: 2;
+}
+
+.kuvert.open .kuvert-flärp {
+  transform: rotateX(-120deg);
+}
+
+/* Brev */
+.brevet {
+  transform: translate(-50%, 100%); /* gömt under */
+}
+
+.kuvert.open .brevet {
+  transform: translate(-50%, -30%); /* brevet glider rakt upp */
 }
