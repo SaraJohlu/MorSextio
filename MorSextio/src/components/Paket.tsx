@@ -21,19 +21,19 @@ export default function Kuvert() {
                 </p>
                 <p>
                   {" "}
-                  Tillsammans med din dotter, mmig/jaget/skaparen av denna sida, ska du få åka på en weekend
+                  Tillsammans med din dotter, mig/jaget/skaparen av denna sida, ska du få åka på en weekend
                   trip till Borås. Ja undra vad vi ska göra i Borås? På senare
                   dagar har du ju gått och blivit litet fan av två män och
                   spöken. Därför har vi sett till att köpa ett presentkort som
                   kan användas som inträde för museet, vi kan också fixa så att
                   vi får en guidad tur med bröderna LAXTON själva. Ska vi vara
-                  lte extra modiga så kan vi även köra vår egna lilla
+                  lite extra modiga så kan vi även köra vår egna lilla
                   spökutredning, eller vill vi verkligen köra på ett wild card,
                   varför inte åka till självaste Prästgården / Borgvattnet. Men
-                  tillsammans kan vi lista ut exakt hur och när och vad såklart.{" "}
+                  tillsammans kan vi lista ut exakt hur, när och vad såklart.{" "}
                 </p>
                 <p>
-                  MEN det är inte slut där, utöver presentkortet har jag tänkt
+                  MEN det är inte slut där, utöver presentkortet har vi tänkt
                   att vi ska ta in på hotell, lyxigt och mysigt, kanske gå ut
                   och käka och bara ha det bra. Jag, din dotter, kör till och
                   från Borås, mellan hotell och Laxton Museet, Förhoppningsvis i
@@ -42,7 +42,7 @@ export default function Kuvert() {
                   oss med för din trivsel. Jag kommer att stå för mig själv.
                 </p>
                 <p>
-                    Vi älskar dig!
+                    Vi älskar dig! Kära du &#10084;&#65039;!
                 </p>
                 <strong>Önskar</strong>
                 <p>Sara och Simon med familj, Jimmi och Jennifer med familj, Mor och Far, Linda med familj och Tommy</p>
